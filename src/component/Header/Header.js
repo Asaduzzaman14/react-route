@@ -8,7 +8,7 @@ const Header = () => {
             <h1>Welcome to my Routoing Website</h1>
             <nav>
                 <CustomeLink to="/">Home</CustomeLink>
-                <CustomeLink to="/Friend"> Friends</CustomeLink>
+                <CustomeLink to="/Friends"> Friends</CustomeLink>
                 <CustomeLink to="About">About</CustomeLink>
             </nav>
         </div>
