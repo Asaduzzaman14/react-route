@@ -4,16 +4,22 @@ import Friends from './component/Friends/Friends';
 import Home from './component/Home/Home';
 import About from './component/About/About'
 import NotFound from './component/NOtFound/NotFound';
+import FriendsName from './component/FriendsName/FriendsName';
+import Header from './component/Header/Header';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to may Routoing website</h1>
-      <p>Home, Friend, About </p>
+      <Header />
+      <p>Home, Friend, About,Friend/FriendsName </p>
+
       <Routes>
+        <Route path='/' element={<Home />}></Route>
         <Route path='/Home' element={<Home />}></Route>
         <Route path='/Friend' element={<Friends />}></Route>
         <Route path='/About' element={<About />}></Route>
-        <Route path='*' element={<NotFound />}></Route>
+        <Route path='/Friend/FriendsName' element={<FriendsName />}></Route>
+        <Route path='/*' element={<NotFound />}></Route>
+
       </Routes>
     </div>
   );
